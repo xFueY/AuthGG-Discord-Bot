@@ -1,0 +1,13 @@
+{
+  "AuthGGAdminAPI" : "",
+
+  "AuthGG Application Information" : "Used for the AppInfo command"
+  "AuthGGAPI" : "",
+  "AuthGGAID" : "",
+  "AuthGGSecret" : "",
+
+  "AppInfoLogo" : "https://i.imgur.com/3GxXzyn.png",
+
+  "DiscordToken" : "",
+  "CommandPrefix" : "!"
+}
