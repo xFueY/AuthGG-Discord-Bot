@@ -1,7 +1,7 @@
 {
   "AuthGGAdminAPI" : "",
 
-  "AuthGG Application Information" : "Used for the AppInfo command"
+  "AuthGG Application Information" : "Used for the AppInfo command",
   "AuthGGAPI" : "",
   "AuthGGAID" : "",
   "AuthGGSecret" : "",
