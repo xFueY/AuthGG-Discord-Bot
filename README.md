@@ -3,4 +3,4 @@ Python Discord Bot Written using Discord.py and PyAuthGG to manage applications 
 
 Make sure to star if you like it, would mean a lot to me :)
 
-![https://i.imgur.com/a8YvhJ2.png]
+![](https://i.imgur.com/a8YvhJ2.png)
