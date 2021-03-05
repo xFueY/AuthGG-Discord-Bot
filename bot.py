@@ -76,7 +76,7 @@ async def Info(ctx):
     CreditsEmbed.add_field(name="Developer", value="[xFueY](https://github.com/xFueY/)")
     CreditsEmbed.add_field(name="Bot Version", value=AuthGGBotVersion)
     CreditsEmbed.add_field(name="PyAuthGG Version", value=PyAuthGG.Version)
-    CreditsEmbed.add_field(name="GitHub", value="https://github.com/xFueY/PyAuthGG/")
+    CreditsEmbed.add_field(name="Download", value="https://github.com/xFueY/AuthGG-Discord-Bot/", inline=False)
 
     await ctx.send(embed=CreditsEmbed)
 
