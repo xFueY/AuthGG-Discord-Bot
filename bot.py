@@ -205,6 +205,17 @@ async def ChangeVariable(ctx, Username, *, Variable):
     await ctx.send(embed=ChangeVariableEmbed)
 
 
+@client.command(name="ChangeRank", brief="Users", description="Change a users rank", usage="ChangeRank <Username> <Rank>")
+@commands.has_permissions(administrator=True)
+async def ChangeRank(ctx, Username, Rank : int):
+    ChangedRank = AuthAdmin.ChangeRank(Username, Rank)
+
+    ChangeRankEmbed=discord.Embed(title="Change Variable", description=f"**Status:** {ChangedRank['status']}\n**Info:** {ChangedRank['info']}", color=AuthGGColor, timestamp=datetime.datetime.utcnow())
+    ChangeRankEmbed.set_author(name=AuthGGName, icon_url=AuthGGIcon, url=AuthGGUrl)
+    ChangeRankEmbed.set_footer(text=ctx.guild.name, icon_url=ctx.guild.icon_url_as(format=None, static_format='png', size=1024))
+    await ctx.send(embed=ChangeRankEmbed)
+
+
 @client.command(name="ChangePassword", brief="Users", description="Change a users password", usage="ChangePassword <Username> <Password>")
 @commands.has_permissions(administrator=True)
 async def ChangePassword(ctx, Username, Password):
@@ -363,6 +374,17 @@ async def ResetHWID(ctx, Username):
     ResetHWIDEmbed.set_author(name=AuthGGName, icon_url=AuthGGIcon, url=AuthGGUrl)
     ResetHWIDEmbed.set_footer(text=ctx.guild.name, icon_url=ctx.guild.icon_url_as(format=None, static_format='png', size=1024))
     await ctx.send(embed=ResetHWIDEmbed)
+
+
+@client.command(name="SetHWID", brief="HWID", description="Set a users HWID", usage="SetHWID <Username> <HWID>")
+@commands.has_permissions(administrator=True)
+async def SetHWID(ctx, Username, HWID):
+    SetHWIDResponse = AuthAdmin.SetHWID(Username, HWID)
+
+    SetHWIDEmbed=discord.Embed(title="Set HWID", description=f"**Status:** {SetHWIDResponse['status']}\n**Info:** {SetHWIDResponse['info']}", color=AuthGGColor, timestamp=datetime.datetime.utcnow())
+    SetHWIDEmbed.set_author(name=AuthGGName, icon_url=AuthGGIcon, url=AuthGGUrl)
+    SetHWIDEmbed.set_footer(text=ctx.guild.name, icon_url=ctx.guild.icon_url_as(format=None, static_format='png', size=1024))
+    await ctx.send(embed=SetHWIDEmbed)
 
 
 client.run(str(config['DiscordToken']))
