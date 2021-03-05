@@ -7,7 +7,6 @@ If you need help with something, feel free to DM me on Discord (xFueY#7575)
 - PyAuthGG
 
 ## Features
-- Free
 - Customizable Embeds
 - Administrator Permissions Required
 - All Admin API Features Supported
