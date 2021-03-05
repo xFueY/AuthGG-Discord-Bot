@@ -7,6 +7,9 @@
   "AuthGGSecret" : "",
 
   "AppInfoLogo" : "https://i.imgur.com/3GxXzyn.png",
+  "AuthGGName" : "Auth.GG",
+  "AuthGGIcon" : "https://i.imgur.com/3GxXzyn.png",
+  "AuthGGUrl" : "https://Auth.GG/",
 
   "DiscordToken" : "",
   "CommandPrefix" : "!"
